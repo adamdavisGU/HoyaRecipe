@@ -24,7 +24,7 @@ async function sendApiRequest() {
 
 //do something with the API data you've received.
 function useApiData(){
-DocumentFragment.querySelector("#content").innerHTML = `
+Document.querySelector("#content").innerHTML = `
 
 //https://getbootstrap.com/docs/5.0/components/card/
 
