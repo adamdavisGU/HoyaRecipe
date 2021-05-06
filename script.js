@@ -12,8 +12,8 @@ button.addEventListener("click",()=>{
 
 //fetch data from the API
 async function sendApiRequest() {
-  let APP_ID = "f7b73eef"
-  let API_key = "5dbfaeb8970da3745068be26a7e45ae3"	
+  let APP_ID = "3cf0d60c"
+  let API_key = "461693499c51d763145926338c52523e"	
   let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_key}&q=pizza`)
   console.log(response)
   let data = await response.json() 
