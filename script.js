@@ -1,7 +1,7 @@
 // general API template: https://glitch.com/~general-api-template​//
 
 //create variable that store button in javascript variable
-let button = document.querySelector("#getData")
+let button = document.querySelector("#search")
 
 
 //add an event listener to the button. Run the function sendApiRequest when the button is clicked
@@ -20,17 +20,14 @@ async function sendApiRequest() {
   console.log(data)
   useApiData (data)
 };
-
-
+//${data.hits[0].recipe.image}
+// https://getbootstrap.com/docs/5.0/components/card/
 //do something with the API data you've received.
 function useApiData(){
-Document.querySelector("#content").innerHTML = `
-
-//https://getbootstrap.com/docs/5.0/components/card/
-
+document.querySelector("#content").innerHTML = `
 
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="data.hits[0].recipe.image" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
