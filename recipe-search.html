@@ -9,11 +9,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Search</title>
         
-        <!--Interactive alert to remind people to check out Our Recipes page-->
-        <div class="alert">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          Check out <strong>Our Recipes</strong> page for recipes we recommend!
-        </div>
+  <!--
+      BOOTSTRAP ALERTS to remind people to check out our recipes
+      https://getbootstrap.com/docs/5.0/components/alerts/#dismissing
+    -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="invalid-inputs-alert" style="margin-bottom: 0;">
+      Check out <strong>Our Recipes</strong> page to see some of our favorites!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
 
 
             <!--
